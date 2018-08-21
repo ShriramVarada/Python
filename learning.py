@@ -91,4 +91,40 @@ for keys in alien_0.keys():
 for x in set(alien_0.values()):
     print(x)
 
+demigodsanddemons=[]
 
+demons={'vritasur':'demon', 'prahlad':'demon devotee' , 'bali': 'grandsonofprahlad'}
+demigods={'indra':'godofheavens', 'vayu':'wind', 'yama':'dharma'}
+
+for i in range(4):
+    demigodsanddemons.append(demons)
+    demigodsanddemons.append(demigods)
+
+for creature in demigodsanddemons[4:]:
+    print(creature)
+
+places ={
+    'USA':['Washington D.C', 'NYC'] ,
+    'India' : ['Delhi', 'Mumbai']
+}
+
+for capitals in places.values():
+    print(capitals[0])
+
+
+players={
+    'dhenier':{
+        'birthplace':'india',
+        'username':'ddhini'
+    } ,
+    'rhonda':{
+        'birthplace':'usa',
+        'username':'rhn'
+    }
+}
+
+for player, description in players.items():
+    if 'india' in description.values():
+        print(player.title()+" ")
+        for des in description.items():
+            print(des)
