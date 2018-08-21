@@ -55,3 +55,40 @@ if requested_toppings:
         print("\nFinished making your pizza!")
 else:
     print("Are you sure you want a plain pizza?")
+
+alien_0 = {'color': 'green', 'points': 5, 'speed' : 'Fast', 'sadf' : 5}
+print(alien_0['color'])
+print(alien_0['points'])
+
+alien_0['god']='Jesus'
+alien_0['color']='blue'
+
+# alien_0 = {}
+# alien_0['color'] = 'green'
+# alien_0['points'] = 5
+# print(alien_0)
+
+if alien_0['speed'].lower()== 'fast':
+    print('It is fast')
+    x_increment=100
+
+print('alien_0 is ' + alien_0['speed'] + " " + str(x_increment))
+
+del alien_0['color']
+print(alien_0)
+
+for key, value in alien_0.items():
+    print('Key: '+ key + '\n')
+    print('Value: ' + str(value) + '\n')
+
+for keys in alien_0.keys():
+    if keys == 'god':
+        print(keys.title())
+
+# if {'color' : 'green'} in alien_0:
+#     print('is present')
+
+for x in set(alien_0.values()):
+    print(x)
+
+
