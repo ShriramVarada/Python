@@ -1,6 +1,7 @@
 print("Hello")
 
 namesofGod = ['Narayana', 'Krishna', 'Rama' , 'Govinda']
+print(namesofGod)
 
 namesofGod.append('Narasimha')
 print(namesofGod)
@@ -39,3 +40,17 @@ print('\n')
 magicians = ['alice', 'david', 'carolina']
 for magician in magicians:
     print(magician.title() + ", that was a great trick!")
+
+squares=[]
+
+# for value in range(2,11,3):
+#     squares.append(value**2)
+squares = [value**2 for value in range(1,11)]
+print(squares)
+
+even_numbers = list(range(2, 11, 2))
+print(even_numbers)
+
+print(min(squares))
+print(max(squares))
+print(sum(squares))
