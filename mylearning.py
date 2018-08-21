@@ -31,8 +31,50 @@ print("Sum is "+ str(sum2))
 
 active= True
 
+# while active:
+#     message = input('Do you want to quit? Y/N')
+#     if message == 'Y'.lower():
+#         active=False
+#         print('Bye Bye')
+
 while active:
     message = input('Do you want to quit? Y/N')
     if message == 'Y'.lower():
-        active=False
         print('Bye Bye')
+        break
+
+for x in range(10):
+    if x%2==0:
+        continue
+    else:
+        print(x)
+
+unconfirmed_users = ['alice', 'brian', 'candace']
+confirmed_users = []
+
+while unconfirmed_users:
+    user = unconfirmed_users.pop()
+    print('Verifying user ' + user.title() +" ...")
+    confirmed_users.append(user)
+print(confirmed_users)
+
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+print(pets)
+while 'dog' in pets:
+    pets.remove('dog')
+print(pets)
+
+responses ={}
+
+while active:
+    name=input('What is your name?')
+    response=input("What si favorite food")
+
+    responses[name] = response
+
+    repeat = input('Would you like to repeat? Y/N')
+
+    if repeat == 'N':
+        active = False
+
+print(responses)
