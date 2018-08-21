@@ -29,4 +29,13 @@ print(namesofGod)
 print(sorted(namesofGod))
 namesofGod.sort()
 namesofGod.reverse()
-print(namesofGod[-1])
+print(namesofGod[-1]+'\n')
+
+for name in namesofGod:
+    print(name)
+
+print('\n')
+
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print(magician.title() + ", that was a great trick!")
