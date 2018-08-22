@@ -10,4 +10,5 @@ class Dog():
 		print(self.name.title() + " is now rolling over")
 
 
-	
+my_dog = Dog('willie' , 6)
+print("My dog name is "+ my_dog.name.title() + ".")
