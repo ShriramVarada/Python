@@ -1,4 +1,5 @@
-from pizza.make_pizza import *
+from pizza import make_pizza as pizza # as is used as alias
+
 
 def greet_user(username, password, age=''):
     print("Hello " + username.title())
@@ -57,17 +58,18 @@ def print_models(unprinted_designs, completed_models):
         print("Printing model: " + current_design)
         completed_models.append(current_design)
 
-unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+
+nprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
 completed_models = []
 
-print_models(unprinted_designs[:], completed_models)
-print(unprinted_designs, completed_models)
+print_models(nprinted_designs[:], completed_models)
+print(nprinted_designs, completed_models)
 
-print_models(unprinted_designs, completed_models)
-print(unprinted_designs, completed_models)
+print_models(nprinted_designs, completed_models)
+print(nprinted_designs, completed_models)
 
 
-make(2, 'Jalapenos')
+pizza.make(2, 'Jalapenos')
 
 
 def make_profile(first, last, **user_info):
