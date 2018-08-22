@@ -1,10 +1,10 @@
+from pizza.make_pizza import *
+
 def greet_user(username, password, age=''):
     print("Hello " + username.title())
     person={'username': username, 'password':password}
-
     if age:
         person['age']=int(age)
-
     return person
 
 
@@ -66,14 +66,8 @@ print(unprinted_designs, completed_models)
 print_models(unprinted_designs, completed_models)
 print(unprinted_designs, completed_models)
 
-def make_pizza(size, *toppings):
-    """Print the list of toppings that have been requested."""
-    print("The size of the pizza is "+ str(size))
-    for topping in toppings:
-        print('- '+ topping)
 
-
-make_pizza(2, 'Jalapenos')
+make(2, 'Jalapenos')
 
 
 def make_profile(first, last, **user_info):
