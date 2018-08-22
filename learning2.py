@@ -1,7 +1,14 @@
-def greet_user(username):
+def greet_user(username, password, age=''):
     print("Hello " + username.title())
+    person={'username': username, 'password':password}
 
-greet_user('Shriram')
+    if age:
+        person['age']=int(age)
+
+    return person
+
+
+print(greet_user('Shriram', age=str(23), password='****'))
 
 # When you use default values, any parameter with a default value needs to be listed
 # after all the parameters that don’t have default values. This allows Python to continue
@@ -25,3 +32,58 @@ def get_formatted_name(first_name, last_name, middle_name=''):
     else:
         full_name = first_name + ' ' + last_name
     return full_name.title()
+
+
+print(get_formatted_name('Shriram', 'Varadarajan'))
+
+
+def print_list(list1):
+    i = 1
+    for item in list1:
+        print('Item '+str(i)+": " + str(item))
+        i += 1
+
+
+print_list([2, 4, 'sfd'])
+
+
+def print_models(unprinted_designs, completed_models):
+    """
+    Lists can be manipulated inside a function
+    """
+    while unprinted_designs:
+        current_design = unprinted_designs.pop()
+        # Simulate creating a 3D print from the design.
+        print("Printing model: " + current_design)
+        completed_models.append(current_design)
+
+unprinted_designs = ['iphone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+print_models(unprinted_designs[:], completed_models)
+print(unprinted_designs, completed_models)
+
+print_models(unprinted_designs, completed_models)
+print(unprinted_designs, completed_models)
+
+def make_pizza(size, *toppings):
+    """Print the list of toppings that have been requested."""
+    print("The size of the pizza is "+ str(size))
+    for topping in toppings:
+        print('- '+ topping)
+
+
+make_pizza(2, 'Jalapenos')
+
+
+def make_profile(first, last, **user_info):
+    profile = {}
+    profile['first_name'] = first
+    profile['last_name'] = last
+    for key, value in user_info.items():
+        profile[key] = value
+    return profile
+
+
+print(make_profile('albert', 'einstein', location='princeton', field='physics'))
+print(make_profile(last='sdf', location='princeton', field='physics', first='sfd', dfs='sfd'))
