@@ -35,6 +35,7 @@ def count_words(filename):
     except FileNotFoundError:
         msg = "Sorry, the file " + filename + " does not exist."
         print(msg)
+        pass  # do nothing and pass on
     else:
         # Count approximate number of words in the file.
         words = contents2.split()
