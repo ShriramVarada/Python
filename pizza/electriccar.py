@@ -1,4 +1,5 @@
-from Dog import Car, Dog
+#from Dog import Car, Dog
+import Dog
 
 
 class Battery:
@@ -21,7 +22,7 @@ class Battery:
         return range2
 
 
-class ElectricCar(Car):
+class ElectricCar(Dog.Car):
     def __init__(self, make, model, year=3):
         """Need a default parameter in the subclass constructor"""
         super().__init__(make, model, year)
@@ -42,7 +43,7 @@ car.inc_odometer(2)
 car.odometer_reading()
 car.describe_battery()
 
-d = Dog('ads', 45)
+d = Dog.Dog('ads', 45)
 print(d.age)
-ds = Car('as', 'Bn')
+ds = Dog.Car('as', 'Bn')
 print(ds.get_descriptive_name())
