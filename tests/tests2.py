@@ -20,4 +20,5 @@ class TestCases(unittest.TestCase):
             self.assertIn(x, self.survey.responses)
 
 
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
