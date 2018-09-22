@@ -12,4 +12,5 @@ class NameTest(unittest.TestCase):
         self.assertEquals('Janis Joplin', get_formatted_name('Janis', 'Joplin'))
 
 
-unittest.main(verbosity=2)  # tells python to run the tests
+if __name__ == '__main__':
+    unittest.main(verbosity=2)  # tells python to run the tests
