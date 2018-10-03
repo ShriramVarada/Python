@@ -21,9 +21,13 @@ class someclass:
 
     def convert_list_to_sent(self, sen):
         list = ''
+
+        if len(sen) == 1:
+            return sen[0]
+
         for i in range(len(sen)):
             if i == len(sen) - 1:
-                list += ' and ' + sen[i]
+                list += 'and ' + sen[i]
             else:
                 list += sen[i] + ', '
         return list
@@ -46,3 +50,5 @@ if __name__ == '__main__':
     single_el_tuple = (1,)
 
     print(foo.convert_list_to_sent(s))
+
+    assert foo.convert_list_to_sent(['ads', 'ad']) == 'ads, and ad'
