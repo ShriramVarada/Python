@@ -1,11 +1,13 @@
+# Homework 4 CS: 3330
+# Includes HeapSort
+
+import math
 import random
 
 L1 = random.sample(range(100), 50)
 L2 = random.sample(range(1000), 100)
 L3 = random.sample(range(10000), 1000)
 L4 = random.sample(range(100000), 10000)
-
-
 
 
 def selectionsort(arr):
@@ -36,6 +38,11 @@ L2M = L2Q[:]
 L3M = L3Q[:]
 L4M = L4Q[:]
 
+L1H = L1Q[:]
+L2H = L2Q[:]
+L3H = L3Q[:]
+L4H = L4Q[:]
+
 print("Selection sort running times in terms of comparisons made: ")
 print("N = 50: " + str(selectionsort(L1)))
 print("N = 100: " + str(selectionsort(L2)))
@@ -64,7 +71,7 @@ def insertionsort(arr):
     return comparisons
 
 
-print()
+print("")
 print("Insertion sort running times in terms of comparisons made: ")
 
 print("N = 50: " + str(insertionsort(L1I)))
@@ -97,60 +104,9 @@ def quicksort(arr, l, r):
         quicksort(arr, s+1, r)
     return comparisonforQuick
 
-# def partition(arr, l, h):
-#
-#     global comparisonforQuick
-#     i = l - 1
-#     x = arr[h]
-#
-#     for j in range(l, h):
-#         comparisonforQuick += 1
-#         if arr[j] <= x:
-#             i += 1
-#             arr[i], arr[j] = arr[j], arr[i]
-#
-#     arr[i+1], arr[h] = arr[h], arr[i+1]
-#     return i+1
-#
-#
-# def quicksort(arr, l, h):
-#         global comparisonforQuick
-#         size = h - l + 1
-#         stack = [0] * size
-#         top = -1
-#
-#         top = top + 1
-#         stack[top] = l
-#         top = top + 1
-#         stack[top] = h
-#
-#         while top >= 0:
-#
-#             # Pop h and l
-#             h = stack[top]
-#             top = top - 1
-#             l = stack[top]
-#             top = top - 1
-#
-#             p = partition(arr, l, h)
-#
-#             comparisonforQuick += 1
-#             if p-1 > l:
-#                 top = top + 1
-#                 stack[top] = l
-#                 top = top + 1
-#                 stack[top] = p - 1
-#
-#             comparisonforQuick += 1
-#             if p+1 < h:
-#                 top = top + 1
-#                 stack[top] = p + 1
-#                 top = top + 1
-#                 stack[top] = h
-#
-#         return comparisonforQuick
 
-print()
+
+print("")
 print("Quicksort running times in terms of comparisons made: ")
 
 comparisonforQuick = 0
@@ -204,7 +160,7 @@ def mergeSort(alist):
         comparisonforMerge += 1
     return comparisonforMerge
 
-print()
+print("")
 print("Mergesort running times in terms of comparisons made: ")
 
 comparisonforMerge = 0
@@ -218,3 +174,53 @@ print("N = 1000: " + str(mergeSort(L3M)))
 
 comparisonforMerge = 0
 print("N = 10000: " + str(mergeSort(L4M)))
+
+
+
+def heapify(arr, n, i):
+    global comparisonforHeap
+    largest = i
+    l = 2*i+1
+    r = 2*i+2
+    comparisonforHeap+=2
+    if l < n and arr[i] < arr[l]:
+        largest = l
+
+    comparisonforHeap += 1 # On average
+    if r < n and arr[largest] < arr[r]:
+        largest = r
+
+    if largest != i:
+        arr[i],arr[largest] = arr[largest],arr[i]
+
+        heapify(arr, n, largest)
+
+
+def heapsort(arr):
+    global comparisonforHeap
+    n = len(arr)
+	
+    for i in range(n, -1, -1):
+        heapify(arr, n, i)
+    for i in range(n-1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+        heapify(arr, i, 0)
+		
+    return comparisonforHeap
+
+
+
+print("")
+print("Heapsort running times in terms of comparisons made: ")
+
+comparisonforHeap = 0
+print("N = 50: " + str(heapsort(L1H)))
+
+comparisonforHeap = 0
+print("N = 100: " + str(heapsort(L2H)))
+
+comparisonforHeap = 0
+print("N = 1000: " + str(heapsort(L3H)))
+
+comparisonforHeap = 0
+print("N = 10000: " + str(heapsort(L4H)))
