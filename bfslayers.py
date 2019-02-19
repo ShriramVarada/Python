@@ -2,6 +2,11 @@ import collections
 
 """
 Problem 1, Homework 2
+
+Run this program as main.
+Uses doctest to validate the answer as a dictionary which maps the layer number
+to the nodes that are present in it.
+Pass to the bfs function, the graph in the form of a dictionary and a starting node
 """
 
 

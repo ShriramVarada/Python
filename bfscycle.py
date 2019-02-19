@@ -1,7 +1,12 @@
 import collections
-import importlib
+
+
 """
 Problem 3, Homework 2
+Run this file as main.
+The test cases used are for reference. If you use a different graph, the program
+may not print the cycle in the order that you wanted it to be. 
+Pass to the bfs function, the graph in the form of a dictionary and a starting node
 """
 
 
@@ -73,62 +78,6 @@ def bfs(G, s):
     else:
         cycle.append(parent[node1])
         return cycle
-    # c = list(edges.keys())[0]
-    # d = edges[c][0]
-    #
-    # hasedge = False
-    # cycle = []
-    # while not hasedge:
-    #     cycle.append(c)
-    #     cycle.append(d)
-    #     c = parent[c]
-    #     d = parent[d]
-    #     if c is d:
-    #         cycle.append(c)
-    #         return cycle
-    #     elif c in G2[d] or d in G2[c]:
-    #         hasedge = True
-    #         cycle.append(c)
-    #         cycle.append(d)
-    #
-    # if not hasedge:
-    #     return []
-    # else:
-    #     return cycle
-
-
-
-    # i = 2
-    # node1 = None
-    # node2 = None
-    # notAdjedge = True
-    # while notAdjedge and i < layer:
-    #     listlayer = layernode[i]
-    #     for j in range(len(listlayer)):
-    #         for k in range(j+1, len(listlayer)):
-    #             if listlayer[k] in G[listlayer[j]]:
-    #                 notAdjedge = False
-    #                 node1 = listlayer[k]
-    #                 node2 = listlayer[j]
-    #                 break
-    #         if not notAdjedge:
-    #             break
-    #     i += 1
-    #
-    # if node1 is None and node2 is None:
-    #     return []
-    #
-    # cycle = [node1, node2]
-    #
-    # while parent[node1] != parent[node2]:
-    #     cycle.append(parent[node1])
-    #     cycle.append(parent[node2])
-    #     node1 = parent[node1]
-    #     node2 = parent[node2]
-    #
-    # node1 = parent[node1]
-    # cycle.append(node1)
-
 
 
 if __name__ == "__main__":
