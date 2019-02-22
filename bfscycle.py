@@ -1,12 +1,20 @@
-import collections
+# coding: utf-8
+# Your code here!
 
+# coding: utf-8
+# Your code here!
+
+import collections
+import copy
 
 """
 Problem 3, Homework 2
 Run this file as main.
 The test cases used are for reference. If you use a different graph, the program
 may not print the cycle in the order that you wanted it to be. 
-Pass to the bfs function, the graph in the form of a dictionary and a starting node
+If the test fails, the nodes of the cycle might be in the wrong order
+Pass to the bfs function, the graph in the form of a dictionary and a starting node. If there is a cycle,
+then it will output the nodes of the cycle as a list. If not, then it prints an empty list
 """
 
 
@@ -14,7 +22,7 @@ def bfs(G, s):
     """
     >>> G = {'a': ['c'], 'b': ['c'], 'c': ['a', 'b', 'd', 'e'], 'd': ['c', 'e'], 'e': ['c', 'd']}
     >>> print(bfs(G, 'c'))
-    ['d', 'e', 'c']
+    ['e', 'd', 'c']
     >>> G = {'a': ['c'], 'b': ['c'], 'c': ['a', 'b', 'd', 'e'], 'd': ['c'], 'e': ['c']}
     >>> print(bfs(G, 'c'))
     []
@@ -41,13 +49,12 @@ def bfs(G, s):
                         T[u] = [v]
                     discovered[v] = True
 
-    leftedges = dict(G)
+    leftedges = copy.deepcopy(G)
 
     for node, conn in T.items():
         for x in conn:
             leftedges[node].remove(x)
             leftedges[x].remove(node)
-
     node1 = None
     node2 = None
 
@@ -81,5 +88,5 @@ def bfs(G, s):
 
 
 if __name__ == "__main__":
-    import doctest
-    doctest.testmod(verbose=True)
+    G = {1: [2,3], 2: [1,4,5], 3: [1,5,6,7], 4: [2], 5: [2,3], 6:[3], 7:[3]}
+    print(bfs(G, 5))
