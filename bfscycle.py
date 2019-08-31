@@ -7,7 +7,10 @@
 #master
 import collections
 import copy
-#stash
+
+#useful commit
+# another useful commit
+
 """
 Problem 3, Homework 2
 Run this file as main.
