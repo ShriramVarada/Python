@@ -1,0 +1,231 @@
+[33mcommit 4593449d1f054a2ac5a353e1c820af87fd64ccdf[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Feb 19 08:19:25 2019 -0600
+
+    ECE 5330
+
+[33mcommit 23a4c92e1ef38f91cf6c0e09dd2323e3240e7472[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Feb 12 21:15:28 2019 -0600
+
+    ECE 5330
+
+[33mcommit 6c464019f4f600dd1277aeb8ff31edd43890ee97[m
+Merge: 65a56b1 b6b8441
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Sun Feb 10 17:37:00 2019 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 65a56b12a8513c3dd145443ddd60c0808aee068a[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Sun Feb 10 17:36:48 2019 -0600
+
+    ECE 5330
+
+[33mcommit b6b8441e386535f5b48f77f9d3dbb7bc82f1122b[m
+Merge: d6db18c 4b18669
+Author: Shriram Varadarajan <shriram-varadarajan@uiowa.edu>
+Date:   Thu Jan 24 15:34:15 2019 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit d6db18c303ccb2dbac207db142d680c8d170e00f[m
+Author: Shriram Varadarajan <shriram-varadarajan@uiowa.edu>
+Date:   Thu Jan 24 15:33:50 2019 -0600
+
+    hw for ece 5330
+
+[33mcommit 4b18669af7e299d9955858f3721e369388158569[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Oct 16 19:53:36 2018 -0500
+
+    Web parsing
+
+[33mcommit 5dbf43504dbbb12ade74505f0abc4930b92191de[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Oct 2 20:17:53 2018 -0500
+
+    assert
+
+[33mcommit 719427e0796ee69efac0b37645f445b845f79608[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Oct 2 20:07:17 2018 -0500
+
+    hackiowa session 2
+
+[33mcommit 2068b7cef240d6b648314b8b25d14a5f4b3b19b8[m
+Merge: c911aad 6b0e23a
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Sep 25 20:15:39 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit c911aadaa0477ada4daa711eecb6ced8722aadf4[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Sep 25 20:15:19 2018 -0500
+
+    hackiowa session 1
+
+[33mcommit 6b0e23adfb2090356bd9d697be7f7a0e28a4b880[m
+Merge: 52d9f4b ed99b96
+Author: Shriram Varadarajan <shriram-varadarajan@uiowa.edu>
+Date:   Sat Sep 22 16:08:26 2018 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 52d9f4b3860460b6555528500133bd744a5f2e12[m
+Author: Shriram Varadarajan <shriram-varadarajan@uiowa.edu>
+Date:   Sat Sep 22 16:08:08 2018 -0500
+
+    Sorting algorithms for CS:3330
+
+[33mcommit ed99b96a75fee7cb6f594fb846cf779b21fea85d[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Sep 18 18:38:16 2018 -0500
+
+    tests part 2
+
+[33mcommit abd38367cea1561fe3742769895dfc7ebdb09362[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Thu Aug 23 20:26:30 2018 -0500
+
+    tests part 2
+
+[33mcommit 0bc79f95e4fab5ef4d957d909b1b9ef5bc62ff7a[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Thu Aug 23 20:07:49 2018 -0500
+
+    tests part 1
+
+[33mcommit 85cbfcfcbf1920da3afdd5741c01d682b70f30f2[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Thu Aug 23 11:29:44 2018 -0500
+
+    jsons
+
+[33mcommit 6b5833d4d9ab7f7a47aa92b704e95185fea3cc1d[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Thu Aug 23 10:25:56 2018 -0500
+
+    Exceptions
+
+[33mcommit d0483830d68a9b38e0162ae957a8e0c787db7344[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Thu Aug 23 09:58:49 2018 -0500
+
+    Reading and writing to files
+
+[33mcommit 8601df97d5aa4aed394af6d66de5bd8703fcc45f[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Wed Aug 22 22:48:15 2018 -0500
+
+    ordered dictionary
+
+[33mcommit ab7ec54895afb7a4321362be4845e480296f050c[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Wed Aug 22 22:20:29 2018 -0500
+
+    Modules and classes
+
+[33mcommit bf53d329afce57eef0e16e7d4cf3b82e8766b69f[m
+Author: Shriram Varadarajan <shriram-varadarajan@uiowa.edu>
+Date:   Wed Aug 22 15:34:15 2018 -0500
+
+    Tiny aspect
+
+[33mcommit afd21761784b7f5bab6e1d1d4bc1579c1f4373de[m
+Author: Shriram Varadarajan <shriram-varadarajan@uiowa.edu>
+Date:   Wed Aug 22 14:08:04 2018 -0500
+
+    classes
+
+[33mcommit 5f6cb54315baab64e19d1e80ad97bf482c8139ec[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 20:54:00 2018 -0500
+
+    Function modules and styling
+
+[33mcommit 8b3bd699de45b719d137e4eee9a9a90422e300d7[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 20:35:09 2018 -0500
+
+    modules and function
+
+[33mcommit 0f1c7a456c249333130f767069b8083133237ad7[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 20:13:48 2018 -0500
+
+    More functions
+
+[33mcommit 3f150212a462f505e6cf948ff43088b178e023ae[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 18:25:25 2018 -0500
+
+    functions
+
+[33mcommit ea0781d09f2c49f68dfa8755f4f2eccb7109977c[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 16:07:18 2018 -0500
+
+    break, continue and some more looping technologies
+
+[33mcommit 12ea1e78ec05c4adf3ea79232a2b2870c82dc481[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 14:06:45 2018 -0500
+
+    While loops and inputs
+
+[33mcommit 49d378df162192b620a74843b75a7b27eadf2e4d[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 12:35:45 2018 -0500
+
+    Testing dictionaries
+
+[33mcommit 7342420d52abe7d648401b804017d8e45268e5bc[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 12:02:17 2018 -0500
+
+    Dictrionaries
+
+[33mcommit a06568f016e8c18a258d34d8f726c37abe695bc3[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Tue Aug 21 10:36:16 2018 -0500
+
+    if-elif-else statements
+
+[33mcommit 84540643be93a3a45d69beeaefaee0d0fbb3d1af[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Mon Aug 20 21:14:29 2018 -0500
+
+    for loops
+
+[33mcommit 5e2dc7f48e5e0f46837fb4d4c89ed22170a727e4[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Mon Aug 20 19:59:43 2018 -0500
+
+    SOme for loops
+
+[33mcommit d77e7929521a3b396899f6e30471c2583521e944[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Mon Aug 20 19:13:36 2018 -0500
+
+    tested lists
+
+[33mcommit b8cc790b23d971470b47f66b0aabccf8ecdbdb4b[m
+Author: Unknown <shriram.varadarajan@gmail.com>
+Date:   Wed Nov 8 20:14:01 2017 -0600
+
+    XML files
+
+[33mcommit 119da2879b0df95d2f4d0cd910db4a7664d8553c[m
+Author: Shriram Varadarajan <shriram.varadarajan@gmail.com>
+Date:   Wed Nov 8 20:13:37 2017 -0600
+
+    Created a sample file
+
+[33mcommit 4f5e0e1b9d2c585e31237576e008ae98e7a8b4b6[m
+Author: ShriramVarada <31357163+ShriramVarada@users.noreply.github.com>
+Date:   Wed Nov 8 20:07:48 2017 -0600
+
+    Initial commit
