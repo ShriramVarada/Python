@@ -1,0 +1,4 @@
+[
+  "tests/tests.py::NameTest::test_first_middle_last_name",
+  "tests/tests.py::NameTest::test_last_first_name"
+]
